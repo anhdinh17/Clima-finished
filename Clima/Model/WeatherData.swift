@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Codable so that it can be decoded from JSON 
 struct WeatherData: Codable {
     let name: String
     let main: Main

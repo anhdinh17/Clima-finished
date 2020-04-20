@@ -14,10 +14,13 @@ struct WeatherModel {
     let temperature: Double
     
     var temperatureString: String {
+        // turn temperature to be String to be used with text of IBOutlet
         return String(format: "%.1f", temperature)
     }
     
+    // computed properties
     var conditionName: String {
+        // depending on conditionId to return a string used for the picture of condition
         switch conditionId {
         case 200...232:
             return "cloud.bolt"
